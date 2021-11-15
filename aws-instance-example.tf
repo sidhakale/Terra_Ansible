@@ -3,7 +3,7 @@ resource "aws_instance" "web1" {
    instance_type = "t2.micro"
    count = 1
   vpc_security_group_ids = ["sg-04167b4767dbd2890"]
-   key_name               = "Linux_Terraform-Chef" 
+   key_name               = "key-0cfa7d3e2d98a815e" 
    iam_instance_profile =   "myManagedInstanceRole"
    user_data = <<-EOF
       #!/bin/bash     
